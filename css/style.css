@@ -1,0 +1,150 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(30, 38%, 92%);
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 0.875rem;
+  word-wrap: break-word;
+}
+
+p {
+  font-size: 14px;
+}
+
+/* for this project only */
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 auto;
+  max-width: 375px;
+  min-height: 100vh;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.8em;
+  padding-bottom: 5px;
+  background-color: hsl(0, 0%, 100%);
+  overflow: hidden;
+}
+
+.card__img img {
+  width: 375px;
+}
+
+.card__content {
+  padding: 1.5em;
+}
+
+.card__cat {
+  padding: 0.1em 0 0.8em;
+  font-weight: 500;
+  opacity: 0.7;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+
+.card__title {
+  font-weight: 700;
+  font-size: 34px;
+  font-family: "Fraunces", serif;
+  line-height: 1.1;
+}
+
+.card__descr {
+  padding: 1em 0 1.2em;
+  line-height: 24px;
+  color: hsl(228, 12%, 48%);
+}
+
+.card__both__prices {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.card__price {
+  font-size: 34px;
+  color: hsl(158, 36%, 37%);
+  font-family: "Fraunces", serif;
+}
+
+.card__previous__price {
+  text-decoration: line-through;
+  color: hsl(228, 12%, 48%);
+}
+
+.button {
+  width: 100%;
+  min-height: 50px;
+  border-radius: 0.8em;
+  font-weight: 700;
+  border: none;
+  margin: 1em 0 0;
+  background-color: hsl(158, 36%, 37%);
+  color: hsl(0, 0%, 100%);
+  cursor: pointer;
+}
+
+.button i {
+  padding-right: 0.8em;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 768px) {
+  main {
+    max-width: 700px;
+  }
+  .card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0;
+    margin: 0;
+    max-height: 500px;
+  }
+  p {
+    font-size: 1.01rem;
+  }
+  .card__content {
+    min-height: 100%;
+    padding: 2em;
+  }
+  .card__cat {
+    padding-top: 1em;
+  }
+  .card__descr {
+    padding: 1.3em 0;
+  }
+  .card__descr {
+    line-height: 26px;
+  }
+  .button {
+    margin-top: 2.1em;
+    font-size: 0.95rem;
+    transition: background-color 0.3s;
+  }
+  .button:hover {
+    background-color: hsl(177, 48%, 17%);
+  }
+}/*# sourceMappingURL=style.css.map */

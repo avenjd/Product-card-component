@@ -1,0 +1,171 @@
+$clr-primary-green: hsl(158, 36%, 37%);
+$clr-primary-cream: hsl(30, 38%, 92%);
+
+$clr-neutral-white: hsl(0, 0%, 100%);
+$clr-neutral-dark: hsl(177, 48%, 17%);
+$clr-neutral-gray: hsl(228, 12%, 48%);
+
+$ff-accent: 'Fraunces', serif;
+$ff-base: 'Montserrat', sans-serif;
+
+$fw-regular: 500;
+$fw-bold: 700;
+
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: $clr-primary-cream;
+	font-family: $ff-base;
+	font-weight: $fw-regular;
+	font-size: 0.875rem;
+	word-wrap: break-word;
+}
+
+p {
+	font-size: 14px;
+}
+
+/* for this project only */
+main {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	margin: 0 auto;
+	max-width: 375px;
+	min-height: 100vh;
+}
+
+.card {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	border-radius: 0.8em;
+	padding-bottom: 5px;
+	background-color: $clr-neutral-white;
+	overflow: hidden;
+}
+
+.card__img img {
+	width: 375px;
+}
+
+.card__content {
+	padding: 1.5em;
+}
+
+.card__cat {
+	padding: 0.1em 0 0.8em;
+	font-weight: $fw-regular;
+	opacity: 0.7;
+	letter-spacing: 5px;
+	text-transform: uppercase;
+}
+
+.card__title {
+	font-weight: $fw-bold;
+	font-size: 34px;
+	font-family: $ff-accent;
+	line-height: 1.1;
+}
+
+.card__descr {
+	padding: 1em 0 1.2em;
+	line-height: 24px;
+	color: $clr-neutral-gray;
+}
+
+.card__both__prices {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 1rem;
+}
+
+.card__price {
+	font-size: 34px;
+	color: $clr-primary-green;
+	font-family: $ff-accent;
+}
+
+.card__previous__price {
+	text-decoration: line-through;
+	color: $clr-neutral-gray;
+}
+
+.button {
+	width: 100%;
+	min-height: 50px;
+	border-radius: 0.8em;
+	font-weight: $fw-bold;
+	border: none;
+	margin: 1em 0 0;
+	background-color: $clr-primary-green;
+	color: $clr-neutral-white;
+	cursor: pointer;
+}
+
+.button i {
+	padding-right: 0.8em;
+}
+
+.attribution {
+	font-size: 11px;
+	text-align: center;
+}
+
+.attribution a {
+	color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 768px) {
+	main {
+		max-width: 700px;
+	}
+
+	.card {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		padding: 0;
+		margin: 0;
+		max-height: 500px;
+	}
+
+	p {
+		font-size: 1.01rem;
+	}
+
+	.card__content {
+		min-height: 100%;
+		padding: 2em;
+	}
+
+	.card__cat {
+		padding-top: 1em;
+	}
+
+	.card__descr {
+		padding: 1.3em 0;
+	}
+
+	.card__descr {
+		line-height: 26px;
+	}
+
+	.button {
+		margin-top: 2.1em;
+		font-size: 0.95rem;
+		transition: background-color 0.3s;
+	}
+
+	.button:hover {
+		background-color: $clr-neutral-dark;
+	}
+}
