@@ -13,4 +13,4 @@
 - View the optimal layout depending on their device's screen size
 - See hover and focus states for interactive elements
 
-This site was built using [GitHub Pages](https://pages.github.com/).
+This site was built using [GitHub Pages](https://avenjd.github.io/Produc-card-component/).
