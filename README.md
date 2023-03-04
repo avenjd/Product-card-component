@@ -4,7 +4,7 @@
 
 # Built with
 - Semantic HTML5 markup
-- CSS custom properties
+- SCSS custom properties
 - Flexbox
 - ReactJS
 - Visual Studio Code
